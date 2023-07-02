@@ -12,6 +12,7 @@ const db_name = process.env.MD_NAME;
 const port = process.env.PORT || 6060;
 const host = 'localhost';
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use('/api/auth', authRoute);
 app.use('/api/alarm', alarmRoute);

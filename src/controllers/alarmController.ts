@@ -1,34 +1,32 @@
-import User from '../modules/User.js'
-import Alarm from '../modules/Alarm.js'
-import { Response, Request } from 'express'
+// import User from '../modules/User.js'
+// import Alarm from '../modules/Alarm.js'
+// import { Response, Request } from 'express'
 
+// export const createAlarm = async (req: Request, res: Response) => {
+// 	try {
+// 		const { time, text, condition, weekday } = req.body;
 
+// 		const newAlarm = new Alarm({
+// 			time,
+// 			text,
+// 			condition,
+// 			weekday
+// 		});
 
-export const createAlarm = async (req: Request, res: Response) => {
-	try {
-		const { time, text, condition, weekday } = req.body;
+// 		await newAlarm.save();
 
-		const newAlarm = new Alarm({
-			time,
-			text,
-			condition,
-			weekday
-		});
+// 		await User.findByIdAndUpdate(req.userId, {
+// 			$push: { alarms: newAlarm }
+// 		});
 
-		await newAlarm.save();
-
-		await User.findByIdAndUpdate(req.userId, {
-			$push: { alarms: newAlarm }
-		});
-
-		res.json(newAlarm)
-	} catch (error) {
-		console.log(error)
-		res.status(402).json({
-			message: 'Что-то пошло не так!'
-		})
-	}
-}
+// 		res.json(newAlarm)
+// 	} catch (error) {
+// 		console.log(error)
+// 		res.status(402).json({
+// 			message: 'Что-то пошло не так!'
+// 		})
+// 	}
+// }
 
 // export const getMyAlarms = async (req: Request, res: Response) => {
 // 	try {

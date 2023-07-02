@@ -16,8 +16,8 @@
 // 			})
 // 		}
 
-// 		const salt = bcrypt.genSaltSync(10)
-// 		const hash = bcrypt.hashSync(password, salt)
+		// const salt = bcrypt.genSaltSync(10)
+		// const hash = bcrypt.hashSync(password, salt)
 
 // 		const newUser = new User({
 // 			email,
@@ -40,8 +40,8 @@
 // 			message: 'Регистрация прошла успешно!',
 // 		})
 // 	} catch (error) {
-// 		console.log(error)
-// 		res.json({ message: 'Ошибка при создании пользователя!' })
+		// console.log(error)
+		// res.json({ message: 'Ошибка при создании пользователя!' })
 // 	}
 // }
 
